@@ -7,39 +7,54 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #1C2833;
+            color: #F4F4F4;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
         }
         nav {
-            background-color: #007BFF;
-            padding: 10px;
+            background-color: #2E4053;
+            padding: 15px;
             text-align: center;
         }
         nav a {
             color: white;
-            margin: 0 15px;
             text-decoration: none;
+            margin: 0 15px;
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #F1948A;
         }
         header {
             text-align: center;
             padding: 50px;
-            background-color: #222;
-            color: white;
+            background-color: #34495E;
+            color: #F4F4F4;
         }
         section {
             padding: 20px;
             text-align: center;
         }
-        footer {
-            background-color: #007BFF;
-            color: white;
-            text-align: center;
+        form {
+            margin: 0 auto;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+        }
+        input, textarea, button {
+            margin: 10px 0;
             padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #F1948A;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #C0392B;
         }
     </style>
 </head>
@@ -47,19 +62,19 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="contact.html">Contact</a>
     </nav>
     <header>
-        <h1>Contact The Main Event</h1>
+        <h1>Contact Us</h1>
+        <p>Have questions or want to learn more? Reach out to us below!</p>
     </header>
     <section>
-        <p>Have questions or want to learn more about The Main Event? Reach out to us!</p>
-        <p>Email: info@themainevent.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Address: 123 Defense Lane, Innovation City</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
-    <footer>
-        <p>&copy; 2025 The Main Event. All rights reserved.</p>
-    </footer>
 </body>
 </html>
