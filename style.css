@@ -215,3 +215,44 @@ footer {
         opacity: 1;
     }
 }
+/* Rotating Logo */
+.rotating-logo {
+    height: 60px; /* Adjust logo size */
+    width: auto; /* Maintain aspect ratio */
+    animation: spin 10s linear infinite; /* Slow rotation */
+    margin-right: 15px; /* Space between logo and navigation links */
+    display: inline-block; /* Proper positioning */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* General Styles */
+nav {
+    background-color: #556B2F; /* Olive Green */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #C2B280; /* Beige */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+nav a:hover {
+    color: #8B0000; /* Dark Red */
+    transform: scale(1.05); /* Hover effect */
+}
