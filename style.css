@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2F4F4F; /* Dark Green */
     color: #F4F4F4; /* Light Text */
-    line-height: 1.6;
+    line-height: 1.8; /* Increases line spacing for readability */
     padding: 20px; /* Space around the edges of the page */
 }
 
@@ -78,74 +78,17 @@ section {
     padding: 40px 20px; /* Adds space inside sections */
     margin-bottom: 30px; /* Space between sections */
     background-color: #2F4F4F; /* Dark Green */
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px; /* Limits section width for readability */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Paragraphs */
 p {
     margin: 20px 0; /* Adds space between paragraphs */
-}
-
-/* Gallery Section */
-.gallery-section {
-    text-align: center;
-    padding: 40px 20px;
-}
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px; /* Space between images */
-    margin-top: 20px;
-}
-.gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
-}
-.gallery img:hover {
-    transform: scale(1.05); /* Slight zoom-in effect on hover */
-}
-
-/* Contact Form */
-.contact-section {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #2F4F4F; /* Dark Green */
-}
-.contact-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #556B2F; /* Olive Green */
-    color: #F4F4F4; /* Light Text */
-    font-size: 1rem;
-}
-.contact-form button {
-    background-color: #8B0000; /* Dark Red */
-    color: #F4F4F4;
-    padding: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
-}
-.contact-form button:hover {
-    background-color: #A52A2A; /* Lighter Red */
-    transform: scale(1.05);
+    text-align: justify; /* Makes text look more professional */
 }
 
 /* Footer */
