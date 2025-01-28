@@ -161,3 +161,29 @@ footer {
     background-color: #A52A2A; /* Lighter Red */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
+/* Header Image Resize */
+.about-header img {
+    width: 100%; /* Make it responsive */
+    max-height: 400px; /* Limit the height */
+    object-fit: cover; /* Ensures the image scales proportionally */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+/* Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.gallery img {
+    width: 300px; /* Set consistent width */
+    height: 200px; /* Set consistent height */
+    object-fit: cover; /* Crop the image to fit */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05); /* Hover effect */
+}
