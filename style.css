@@ -108,3 +108,9 @@ footer {
 .highlight h2 {
     color: #F4F4F4; /* Light Text */
 }
+.about-header img {
+    width: 100%; /* Make it responsive */
+    max-height: 400px; /* Limit the height */
+    object-fit: cover; /* Ensures it doesn’t stretch */
+    border-radius: 10px; /* Optional for rounded corners */
+}
