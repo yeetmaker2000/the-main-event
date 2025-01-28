@@ -34,6 +34,10 @@ header {
     background-color: #556B2F; /* Olive Green */
     color: #C2B280; /* Beige */
 }
+header img {
+    width: 100%;
+    height: auto;
+}
 section {
     padding: 20px;
     text-align: center;
