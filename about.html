@@ -15,7 +15,9 @@
     </nav>
     <header class="about-header">
         <h1>About The Main Event</h1>
-        <img src="https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg?t=st=1738050694~exp=1738054294~hmac=50a96608ffde18f1babbd5f3e1df7dac06e29d34b462e389dbf7ab2450ece107&w=2000" alt="About Us">
+        <div class="image-wrapper">
+            <img src="https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg?t=st=1738050694~exp=1738054294~hmac=50a96608ffde18f1babbd5f3e1df7dac06e29d34b462e389dbf7ab2450ece107&w=2000" alt="About Us">
+        </div>
     </header>
     <section>
         <h2>Our Vision</h2>
@@ -26,6 +28,7 @@
     <section class="gallery-section">
         <h2>Gallery</h2>
         <div class="gallery">
+            <!-- Gallery Images -->
             <img src="https://en.saudishopper.com.sa/wp-content/uploads/2024/06/WDS-at-Eurosatory-1_ssict_1200_800-1200x640.webp" alt="Gallery Image 1">
             <img src="https://37eventsa.com/wp-content/uploads/2024/02/wds2.png" alt="Gallery Image 2">
             <img src="https://www.spa.gov.sa/_next/image?url=https%3A%2F%2Fportalcdn.spa.gov.sa%2Fbackend%2Foriginal%2F202402%2FKpaKXZz7YmBIzT5Pb75ah2YoMlQDiEO3zr1SFYtm.jpg&w=3840&q=75" alt="Gallery Image 3">
@@ -40,5 +43,29 @@
             <img src="https://mediacenter-webfiles.edgegroup.ae/s3fs-public/styles/detail/public/2022-08/EDGE%20to%20Showcase%20Region%E2%80%99s%20Leading%20Advanced%20Technology%20Solutions%20at%20World%20Defense%20Show.jpg.webp?itok=MdYONm3C" alt="Gallery Image 12">
         </div>
     </section>
+    <div id="lightbox" class="lightbox">
+        <img id="lightbox-img" src="" alt="Large View">
+    </div>
+    <footer>
+        <p>&copy; 2025 The Main Event. All rights reserved.</p>
+    </footer>
+    <script>
+        // Lightbox functionality
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const galleryImages = document.querySelectorAll('.gallery img');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.style.display = 'flex';
+            });
+        });
+
+        lightbox.addEventListener('click', () => {
+            lightbox.style.display = 'none';
+        });
+    </script>
 </body>
 </html>
+
