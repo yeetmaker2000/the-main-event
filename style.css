@@ -1,49 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saudi Arabia - The Main Event</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html">Contact</a>
-        <a href="saudi.html">Saudi Arabia</a>
-    </nav>
-    <header class="futuristic-header">
-        <h1>Saudi Arabia's Role in Defense</h1>
-        <p>Exploring leadership and innovation in shaping the future of global defense.</p>
-        <!-- Saudi Flag -->
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Flag_of_Saudi_Arabia.svg" 
-            alt="Saudi Arabia Flag" 
-            style="width: 200px; margin-top: 20px; border-radius: 5px;">
-    </header>
-    <section>
-        <h2>Driving Innovation</h2>
-        <p>
-            Saudi Arabia is at the forefront of defense innovation, with initiatives such as SAMI (Saudi Arabian Military Industries) paving the way for advanced technologies and local production capabilities. This effort strengthens both the nation’s self-reliance and its contribution to global defense solutions.
-        </p>
-    </section>
-    <section class="highlight">
-        <h2>World Defense Show</h2>
-        <p>
-            A cornerstone of Saudi Arabia's vision for global collaboration, the World Defense Show is a platform that unites industry leaders, showcases cutting-edge advancements, and highlights the nation’s commitment to being a leader in defense technology and strategy.
-        </p>
-    </section>
-    <section>
-        <h2>A Vision for the Future</h2>
-        <p>
-            Aligned with Vision 2030, Saudi Arabia is shaping its defense sector to focus on innovation, sustainability, and empowerment. By investing in education, partnerships, and groundbreaking initiatives, the nation is creating a path toward a secure and progressive future for the world.
-        </p>
-    </section>
-    <footer>
-        <p>&copy; 2025 The Main Event. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2F4F4F; /* Dark Green */
+    color: #F4F4F4; /* Light Text */
+    line-height: 1.8; /* Increases line spacing for readability */
+    padding: 20px; /* Space around the edges of the page */
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #556B2F; /* Olive Green */
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav a {
+    color: #C2B280; /* Beige */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.2s;
+}
+nav a:hover {
+    color: #8B0000; /* Dark Red */
+    transform: scale(1.05); /* Hover effect */
+}
+
+/* Brand Text Styling */
+.brand-text {
+    display: inline-block;
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-right: 20px; /* Spacing between text and navigation links */
+    text-transform: uppercase;
+    line-height: 1; /* Keeps text aligned neatly */
+}
+
+.brand-the {
+    color: #00654B; /* Dark green for "The" */
+}
+
+.brand-main {
+    color: #FFFFFF; /* White for "Main" */
+}
+
+.brand-event {
+    color: #6B6232; /* Olive brown for "Event" */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px; /* Adds space inside the header */
+    background-color: #556B2F; /* Olive Green */
+    color: #F4F4F4;
+    margin-bottom: 30px; /* Space after the header */
+}
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; /* Space below the heading */
+}
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px; /* Space above the paragraph */
+    text-align: center; /* Center aligns the paragraph */
+}
+
+/* Section Styling */
+section {
+    padding: 40px 20px; /* Adds space inside sections */
+    margin-bottom: 30px; /* Space between sections */
+    background-color: #2F4F4F; /* Dark Green */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px; /* Limits section width for readability */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paragraphs */
+p {
+    margin: 20px 0; /* Adds space between paragraphs */
+    text-align: justify; /* Makes text look more professional */
+}
+
 /* Gallery Section */
 .gallery-section {
     text-align: center;
@@ -69,3 +118,11 @@
     transform: scale(1.05); /* Slight zoom-in effect on hover */
 }
 
+/* Footer */
+footer {
+    background-color: #556B2F; /* Olive Green */
+    color: #C2B280; /* Beige */
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px; /* Space above the footer */
+}
