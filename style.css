@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #2F4F4F; /* Dark Green */
     color: #F4F4F4; /* Light Text */
-    line-height: 1.8; /* Increases line spacing for readability */
+    line-height: 1.8; /* Adds proper line spacing for readability */
     padding: 20px; /* Space around the edges of the page */
 }
 
@@ -79,11 +79,52 @@ header p {
     text-align: center; /* Center aligns the paragraph */
 }
 
-/* Footer */
-footer {
-    background-color: #556B2F; /* Olive Green */
-    color: #C2B280; /* Beige */
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 30px; /* Space above the footer */
+/* Section Styling */
+section {
+    padding: 40px 20px; /* Adds space inside sections */
+    margin-bottom: 30px; /* Space between sections */
+    background-color: #2F4F4F; /* Dark Green */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 900px; /* Limits section width for readability */
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* Section Headers */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Adds space below section titles */
+    font-size: 1.8rem;
+    color: #C2B280; /* Light Beige */
+}
+
+/* Paragraphs */
+p {
+    margin: 20px 0; /* Adds space between paragraphs */
+    text-align: justify; /* Justifies text for a professional look */
+}
+
+/* Gallery Section */
+.gallery-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for rows */
+    gap: 20px; /* Space between images */
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%; /* Ensure the images fit their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for better visuals */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visuals */
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05
